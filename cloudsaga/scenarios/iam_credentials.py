@@ -19,7 +19,7 @@ timestamp_date_string = str(timestamp_date)
 def get_cred_report():
     """Function to retrieve credential report"""
     try:
-        iam_user=boto3.client('iam', region_name='us-east-1') #May need to change region name
+        iam_user=boto3.client('iam', region_name='ap-southeast-3') #May need to change region name
         logging.info('Generating credential report')
         iam_user.generate_credential_report()
         logging.info('Getting credential report')
