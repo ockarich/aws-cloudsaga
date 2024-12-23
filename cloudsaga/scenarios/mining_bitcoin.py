@@ -32,6 +32,7 @@ ec2_ami = {
     'ap-northeast-3': 'ami-092faff259afb9a26',
     'ap-southeast-1': 'ami-055147723b7bca09a',
     'ap-southeast-2': 'ami-0f39d06d145e9bb63',
+    'ap-southeast-3': 'ami-0412dqwf352313d12',
     'ca-central-1': 'ami-0e28822503eeedddc',
     'eu-central-1': 'ami-0b1deee75235aa4bb',
     'eu-west-1': 'ami-0943382e114f188e8',
