@@ -21,7 +21,7 @@ timestamp_date_string = str(timestamp_date)
 
 
 sts = boto3.client('sts')
-region = os.environ.get('AWS_REGION', 'ap-southeast-3')
+region = os.environ.get('AWS_REGION', 'ap-east-1')
 
 
 region_list = ['af-south-1', 'ap-east-1', 'ap-south-1', 'ap-northeast-1', 'ap-northeast-2', 'ap-northeast-3', 'ap-southeast-1', 'ap-southeast-2', 'ap-southeast-3', 'ca-central-1', 'eu-central-1', 'eu-west-1', 'eu-west-2', 'eu-west-3', 'eu-north-1', 'eu-south-1', 'me-south-1', 'sa-east-1', 'us-east-1', 'us-east-2', 'us-west-1', 'us-west-2']
@@ -81,7 +81,7 @@ def public_resource_check(region_list, dummy_string):
         dummy_rds = rds_single.create_db_instance(
             DBName='cloudsaga_db',
             DBInstanceIdentifier='cloudsagadbinstance',
-            DBInstanceClass='db.t2.micro',
+            DBInstanceClass='db.t3.micro',
             AllocatedStorage=20,
             Engine='mysql',
             MasterUsername='awscostdb',
